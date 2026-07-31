@@ -1,4 +1,4 @@
-# 🦷 DentAlign - AI-Powered Dental Clinic Management System & CDSS
+# DentAlign - Dental Clinic Management System with CDSS
 
 [![React](https://img.shields.io/badge/Frontend-React_19-blue.svg)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Build_Tool-Vite-646CFF.svg)](https://vitejs.dev/)
@@ -9,85 +9,62 @@
 
 ---
 
-## 🖼️ Application Screenshots & Previews
+## Key Features
 
-Add your website screenshots into the `docs/screenshots/` folder matching the filenames below.
+- **AI Clinical Decision Support System (CDSS)**: Automated dental caries segmentation built using PyTorch U-Net (EfficientNet-B0 backbone). Returns confidence metrics and base64 overlay masks.
+- **Radiology & Image Processing**: SimpleITK filters (Sharpening, Gaussian Smoothing, Noise Reduction) for dental X-rays.
+- **Interactive DICOM Viewer**: High-resolution viewer with Zoom, Pan, Rotation, Contrast, and Brightness adjustments.
+- **Analytics & Visual Reports**: Interactive Charts (Bar, Pie, Line) powered by `Chart.js` for clinic KPIs, financial performance, and patient growth.
+- **Role-Based Access Control (RBAC)**: Secure routes tailored for Doctors, Nurses, Staff, and Patients.
+
+
+## Website Screenshots & Previews
+
 
 ### 1. Homepage & Landing Portal
-> **Image Path**: `docs/screenshots/01-home-page.png`  
-> **What to capture**: The hero section, clinic services, and top navigation bar on [http://localhost:5173/](http://localhost:5173/)
 
-![Homepage & Landing Portal](./docs/screenshots/01-home-page.png)
+<img width="1792" height="948" alt="Screenshot 2026-07-31 at 6 13 11 PM" src="https://github.com/user-attachments/assets/01ee30c4-55e9-4cd8-9b2b-b4bd486d7af3" />
+
+<img width="1792" height="1025" alt="Screenshot 2026-07-31 at 6 13 37 PM" src="https://github.com/user-attachments/assets/172ab7c7-dfab-4462-addd-f5aacc2fb12b" />
 
 ---
 
 ### 2. Login & Role Authentication
-> **Image Path**: `docs/screenshots/02-login-page.png`  
-> **What to capture**: The sign-in form with email/password input on [http://localhost:5173/login](http://localhost:5173/login)
 
-![Login & Authentication](./docs/screenshots/02-login-page.png)
+<img width="1765" height="1036" alt="Screenshot 2026-07-31 at 6 14 44 PM" src="https://github.com/user-attachments/assets/1f873c16-d9b1-47c9-b71e-8487cf62a48b" />
 
 ---
 
 ### 3. Doctor & Staff Dashboard
-> **Image Path**: `docs/screenshots/03-staff-dashboard.png`  
-> **What to capture**: The staff navigation sidebar, metric stat cards, upcoming appointments, and patient lists on [http://localhost:5173/staff/dashboard](http://localhost:5173/staff/dashboard)
 
-![Doctor & Staff Dashboard](./docs/screenshots/03-staff-dashboard.png)
+<img width="1791" height="595" alt="Screenshot 2026-07-31 at 6 17 55 PM" src="https://github.com/user-attachments/assets/1187e7bf-431b-4e6a-b864-6ca72ff46838" />
+
+<img width="1788" height="905" alt="Screenshot 2026-07-31 at 6 19 14 PM" src="https://github.com/user-attachments/assets/45dfe963-a7af-41c3-8d5a-aea1c27c87d4" />
+
+<img width="1768" height="1014" alt="Screenshot 2026-07-31 at 6 19 40 PM" src="https://github.com/user-attachments/assets/c2524253-654a-4b83-b55e-41e194512b8d" />
 
 ---
 
 ### 4. AI Caries Detection (CDSS)
-> **Image Path**: `docs/screenshots/04-cdss-segmentation.png`  
-> **What to capture**: An uploaded dental X-ray with the red AI lesion segmentation mask overlay and confidence percentage on [http://localhost:5173/cdss](http://localhost:5173/cdss)
 
-![AI Caries Detection CDSS](./docs/screenshots/04-cdss-segmentation.png)
+<img width="1787" height="1033" alt="Screenshot 2026-07-31 at 6 16 40 PM" src="https://github.com/user-attachments/assets/9bfa420e-c7eb-4caf-beb5-fb749038f207" />
 
----
-
-### 5. Radiology & SimpleITK Image Filtering
-> **Image Path**: `docs/screenshots/05-radiology-suite.png`  
-> **What to capture**: The radiology upload panel, filter buttons (Sharpen, Smooth, Noise Reduction), and side-by-side scan inspector on [http://localhost:5173/staff/radiology](http://localhost:5173/staff/radiology)
-
-![Radiology Suite](./docs/screenshots/05-radiology-suite.png)
 
 ---
 
-### 6. Practice Analytics & Financial Reports
-> **Image Path**: `docs/screenshots/06-analytics-reports.png`  
-> **What to capture**: The revenue bar chart, appointment status pie chart, and patient growth line chart on [http://localhost:5173/staff/reports](http://localhost:5173/staff/reports)
+### 5. Patient Portal & Booking Flow
 
-![Practice Analytics & Reports](./docs/screenshots/06-analytics-reports.png)
+<img width="1775" height="867" alt="Screenshot 2026-07-31 at 6 22 31 PM" src="https://github.com/user-attachments/assets/67a106ed-6bed-4ab8-bd6c-2fa33c293e2c" />
 
----
+<img width="1784" height="1012" alt="Screenshot 2026-07-31 at 6 22 48 PM" src="https://github.com/user-attachments/assets/7f46d54a-9d09-4ab0-8053-928889bc7559" />
 
-### 7. Interactive DICOM Viewer
-> **Image Path**: `docs/screenshots/07-dicom-viewer.png`  
-> **What to capture**: The DICOM image viewport with zoom, rotation, contrast slider, and brightness controls on [http://localhost:5173/dicom](http://localhost:5173/dicom)
+<img width="1782" height="839" alt="Screenshot 2026-07-31 at 6 23 08 PM" src="https://github.com/user-attachments/assets/1257217b-986f-40b1-917d-ef106aab8f07" />
 
-![Interactive DICOM Viewer](./docs/screenshots/07-dicom-viewer.png)
 
 ---
 
-### 8. Patient Portal & Booking Flow
-> **Image Path**: `docs/screenshots/08-patient-portal.png`  
-> **What to capture**: The patient dashboard, appointment booking form, and treatment history on [http://localhost:5173/patient/dashboard](http://localhost:5173/patient/dashboard)
 
-![Patient Portal](./docs/screenshots/08-patient-portal.png)
-
----
-
-## ✨ Key Features
-
-- **⚡ AI Clinical Decision Support System (CDSS)**: Automated dental caries segmentation built using PyTorch U-Net (EfficientNet-B0 backbone). Returns confidence metrics and base64 overlay masks.
-- **🩻 Radiology & Image Processing**: SimpleITK filters (Sharpening, Gaussian Smoothing, Noise Reduction) for dental X-rays.
-- **👁️ Interactive DICOM Viewer**: High-resolution viewer with Zoom, Pan, Rotation, Contrast, and Brightness adjustments.
-- **📊 Analytics & Visual Reports**: Interactive Charts (Bar, Pie, Line) powered by `Chart.js` for clinic KPIs, financial performance, and patient growth.
-- **🔐 Role-Based Access Control (RBAC)**: Secure routes tailored for Doctors, Nurses, Staff, and Patients.
-
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: React 19, Vite, React Router v7, Chart.js, CornerstoneJS, Vanilla CSS Modules.
 - **Backend**: Python 3.12, Django 6.0, Django REST Framework, Token Auth.
@@ -96,7 +73,7 @@ Add your website screenshots into the `docs/screenshots/` folder matching the fi
 
 ---
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### 1. Clone the Repository
 ```bash
@@ -138,17 +115,16 @@ Application endpoints:
 
 ---
 
-## 🔑 Demo Login Credentials
+## Demo Login Credentials
 
 | Role | Email | Password | Allowed Access |
 | :--- | :--- | :--- | :--- |
 | 👨‍⚕️ **Doctor** | `doctor@dentalign.com` | `password123` | Full Staff Access, Radiology, CDSS, Analytics |
-| 👩‍⚕️ **Nurse / Staff** | `nurse@dentalign.com` | `password123` | Patient Management, Appointments, Radiology |
 | 👤 **Patient** | `patient@dentalign.com` | `password123` | Booking, Prescriptions, Treatment History |
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 DentAlign/
@@ -172,6 +148,16 @@ DentAlign/
 │   └── screenshots/          # Place site screenshot PNG files here
 └── README.md
 ```
+
+---
+
+## Contributors
+
+- [Mazen Marwan](https://github.com/Mazenmarwan023)
+- [Saif Taha](https://github.com/seiftaha)
+- [Mohamed Yasser](https://github.com/mahmoudmo22)
+- [Malak Emad](https://github.com/malak-emad)
+- [Nariman Ahmed](https://github.com/nariman-ahmed)
 
 ---
 
