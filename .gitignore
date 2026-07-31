@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[codz]
+*$py.class
+
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Environment & Dependencies
+.venv
+env/
+venv/
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+
+# Database & Logs
+db.sqlite3
+*.sqlite3
+*.log
+
+# Environment variables
+.env
+.env.local
